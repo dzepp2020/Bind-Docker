@@ -1,2 +1,2 @@
 # Bind-Docker
-ICS Bing Container that supports RPZ and Zone Overrides
+ICS Bind Container that supports RPZ and Zone Overrides
