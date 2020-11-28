@@ -1,0 +1,2 @@
+
+docker run -it -v /Users/work/dockers/bind9/config:/etc/bind:ro --name=bind9 -p 53:53 -p 53:53/UDP bind9

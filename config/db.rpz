@@ -1,0 +1,14 @@
+$TTL 60
+@            IN    SOA  localhost. root.localhost.  (
+                          20171030     ; serial
+                          30m           ; refresh
+                          15          ; retry
+                          1w           ; expiry
+                          30m)         ; minimum
+                   IN     NS    localhost.
+
+localhost       A   127.0.0.1
+
+www.some-website.com    	A 127.123.45.67
+www.other-website.com   CNAME    fake-hostname.com.
+foo.google.com		CNAME 	 www.google.com.
