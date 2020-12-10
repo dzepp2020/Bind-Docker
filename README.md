@@ -1,11 +1,11 @@
 # Bind-Docker
-ICS Bind Container that runs an recursive ICS Bind DNS server which is bootstraped to root domain servers. This should be fully funciontal and also allow the user to explore the following:
+ICS Bind [Docker](https://www.docker.com) container built on [Ubuntu](https://www.ubuntu.com) that runs a recursive [ICS Bind DNS](https://ics.org) server which is bootstraped to root TLD servers. This should be fully functional and also allows the user to explore the following:
 
 
 * Zone Overrides (highjack a zone)
-* Response Policy Zones
+* Response Policy Zones (server alternate responses for individual records)
 
-I've enjoy tinkering DNS and Docker. This Docker container useful to *see* all the DNS traffic coming from a machine; as well as, a explorering RPZ and domain highjacking.
+I've enjoyed tinkering DNS and Docker. This Docker container is useful to *see* all the DNS traffic coming from a machine; as well as, a exploring RPZ and domain highjacking.
 
 # Domain highjacking
 You can use this if you want to highjack or blackhole a domain. This basically will make the recurse server act as if it is authoritative for the domain in question. To highjack a domain we simply define a db.ovveride zone as follows:
@@ -75,5 +75,5 @@ or using the helper script start.bash
 ```
 bash ./start.bash
 ```
-
+Once the container is running you can modify your computer to use the local recursive server for DNS resolution.
 
