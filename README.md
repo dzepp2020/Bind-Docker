@@ -1,5 +1,5 @@
 # Bind-Docker
-ICS Bind Container that runs an ICS Bind server which is bootstraped to root domain servers with the following:
+ICS Bind Container that runs an recursive ICS Bind DNS server which is bootstraped to root domain servers. This should be fully funciontal and also allow the user to explore the following:
 
 
 * Zone Overrides (highjack a zone)
@@ -69,3 +69,11 @@ build -t bind9 .
 ```
 docker run --rm -it -v ${PWD}/config:/etc/bind:ro --name=bind9 -p 53:53 -p 53:53/UDP bind9
 ```
+
+or using the helper script start.bash
+
+```
+bash ./start.bash
+```
+
+
